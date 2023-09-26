@@ -1,62 +1,52 @@
 ---
-import "./style.css"
+import "../style.css"
+import Profile from "../components-react/Profile";
+import Header from "../components-react/Header";
+import Studies from "../components-react/Studies"
+import Experience from "../components-react/Experience"
+import Contact from "../components-react/Contact"
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaceX</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUAN ESTEBAN TIRADO BENJUMEA</title>
 
-
-    <link rel="icon" type="icon" href="icons8_rocket.ico">
-    
-
-
-</head>
-<body>
-    
-        <div class="container">
-            <header>
-            <div class="navbar">
-                <h1 class="logo">SPACEX</h1>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">JOB</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">CONNECT</a></li>
-                </ul>
-               
+    <link rel="icon" type="icon" href="icons8_rocket.ico" />
+  </head>
+  <body>
+    <div class="container" >
+      <header>
+        <div class="navbar">
+          <h1 class="logo">JUAN ESTEBAN TIRADO BENJUMEA</h1>
+          <Header />
         </div>
-    </header>
-       <div id="whole">
+      </header>
+      <div id="whole">
         <div class="page">
-            
-            
-            <div class="sidepane">
-                <div class="inner">
-                
-                <h1>Welcome <br><span>To SpaceX World</span></h1>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam fuga et quibusdam repudiandae delectus suscipit dignissimos totam voluptates recusandae nisi, ipsam labore quia alias quas, natus praesentium quam doloribus ex perferendis optio molestiae? Mollitia nostrum impedit eius, quisquam eos similique!  </p>
+          <div class="sidepane">
+            <div class="inner" id="#profile" >
+              <h1>Welcome <br /><span>PERFIL PROFESIONAL</span></h1>
+              <Profile />
+              <span>FORMACIÓN ACADÉMICA</span>
+              <Studies/>
+              <span>EXPERIENCE</span>
+              <Experience/>
+              <span>CONTACT</span>
+              <Contact/>
 
-                <a href="#"><button class="explore">
-                    Explore
-                </button></a>
-            <a href="#"><button class="explore">
-                Watch Us
-            </button></a>
+
+              <a href="#"><button class="explore"> Explore</button></a>
+              <a href="#"><button class="explore"> Watch Us</button></a>
             </div>
-            </div>
-            <img src="astronaut-amico.svg" alt="error" class="first-img" >
-        </div> 
+          </div>
+          <img src="astronaut-amico.svg" alt="error" class="first-img" />
+        </div>
+      </div>
+      <footer></footer>
     </div>
-        <footer>
-          
-        </footer>
-    
-</body>
+  </body>
 </html>
